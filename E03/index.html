@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+      <head>
+          <meta charset="utf-8">
+          <title>Formulario de registro</title>
+      </head>
+      <body>
+<form method="get" action="http://servicios.ver.ucc.mx/procesar.php">
+      <fieldset>
+          <legend><label>Datos personales</label></legend>
+          <label>Nombre:<br>
+              <input type="text" name="nombre" placeholder="nombre" required>
+          </label><br>
+          <label>E-mail:<br>
+              <input type="email" name="email" placeholder="e-mail" required>
+          </label><br>
+          <label>Contraseña:<br>
+              <input type="password" name="password" placeholder="contraseña" required>
+          </label><br>
+          <input type="radio" name="sexo" value="h" checked="checked">Hombre
+          <input type="radio" name="sexo" value="m">Mujer
+      </fieldset>
+
+      <fieldset>
+          <legend><label>Servicio de noticias</label></legend>
+          <input type="checkbox" name="noticias[]" value="Noticias de política"><label>Noticias de política</label><br>
+          <input type="checkbox" name="noticias[]" value="Noticias de espectáculos"><label>Noticias de espectáculos</label><br>
+          <input type="checkbox" name="noticias[]" value="Noticias de tecnología"><label>Noticias de tecnología</label><br>
+          <label>Metodo de entrega:<br>
+              <select>
+                  <option value="Desde el portal">Desde el portal</option>
+                  <option value="Enviar a mi e-mail">Enviar a mi E-mail</option>
+              </select><br>
+              <label>Observaciones:<br>
+                  <textarea rows="5" cols="30" name="observaciones">
+
+                  </textarea>
+              </label>
+          </label>
+      </fieldset>
+
+      <input type="submit" value="Enviar">
+</form>
+
+      </body>
+</html>
